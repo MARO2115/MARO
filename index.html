@@ -1,74 +1,90 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="light">
+<html lang="pl" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rodzinka Furaska Vexa</title>
-  <meta name="description" content="Witamy w rodzince Furaska Vexa — rozgość się i sprawdź, co dla Ciebie przygotowaliśmy." />
+  <title>MROCZNA STRONA UMYSŁU</title>
+  <meta name="description" content="Witaj po mrocznej stronie mojego umysłu." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root {
+        :root {
       --gradient-speed: 10s;
-      --bg-a: #b38aff;
-      --bg-b: #ffffff;
-      --text: #201838;
-      --muted: #5b4b86;
-      --accent: #7e5cff;
-      --accent-strong: #613eff;
-      --card-bg: rgba(255,255,255,0.6);
-      --card-border: rgba(126, 92, 255, 0.28);
-      --hr-color: rgba(126,92,255,0.55);
-      --btn-bg: rgba(126, 92, 255, 0.08);
-      --btn-border: rgba(126, 92, 255, 0.36);
-      --btn-bg-hover: rgba(126, 92, 255, 0.16);
-      --btn-border-hover: rgba(126, 92, 255, 0.65);
-      --btn-shadow: 0 8px 22px rgba(0,0,0,0.08);
-      --btn-shadow-hover: 0 12px 28px rgba(0,0,0,0.12), 0 0 24px rgba(126,92,255,0.18);
-      --video-border: rgba(126, 92, 255, 0.22);
-      --video-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 0 22px rgba(126,92,255,0.12);
-      --video-bg: #ffffff;
-      --yt: #ff1f4a;
-      --discord: #5865F2;
-      --instagram: #E4405F;
-      --heart-opacity: 0.31;
-      --input-bg: rgba(255,255,255,0.8);
-      --input-border: rgba(126, 92, 255, 0.3);
-      --input-focus-border: rgba(126, 92, 255, 0.7);
-      --comment-bg: rgba(255,255,255,0.4);
-      --comment-border: rgba(126, 92, 255, 0.2);
-      --comment-hover: rgba(126, 92, 255, 0.08);
-      --timestamp-color: #8b7ab8;
     }
 
+    /* MOTYW CIEMNY (mroczny) */
     html[data-theme="dark"] {
-      --bg-a: #281457;
-      --bg-b: #3d1a77;
-      --bg-c: #a100ff;
-      --text: #eadfff;
-      --muted: #cbb5ff;
-      --accent: #d7b6ff;
-      --accent-strong: #b985ff;
-      --card-bg: rgba(255,255,255,0.05);
-      --card-border: rgba(220,180,255,0.18);
-      --hr-color: rgba(215,182,255,0.60);
-      --btn-bg: rgba(215,182,255,0.06);
-      --btn-border: rgba(215,182,255,0.42);
-      --btn-bg-hover: rgba(215,182,255,0.12);
-      --btn-border-hover: rgba(215,182,255,0.70);
-      --btn-shadow: 0 8px 22px rgba(0,0,0,0.28);
-      --btn-shadow-hover: 0 12px 28px rgba(0,0,0,0.35), 0 0 24px rgba(185,133,255,0.24);
-      --video-border: rgba(215,182,255,0.22);
-      --video-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 0 22px rgba(185,133,255,0.16);
+      --bg-a: #0a0a0a;
+      --bg-b: #3a3a3a;
+      --text: #c8c8c8;
+      --muted: #888888;
+      --accent: #b0b0b0;
+      --accent-strong: #e0e0e0;
+      --card-bg: rgba(20,20,20,0.85);
+      --card-border: rgba(255,255,255,0.08);
+      --hr-color: rgba(255,255,255,0.15);
+      --btn-bg: rgba(255,255,255,0.04);
+      --btn-border: rgba(255,255,255,0.18);
+      --btn-bg-hover: rgba(255,255,255,0.10);
+      --btn-border-hover: rgba(255,255,255,0.35);
+      --btn-shadow: 0 8px 22px rgba(0,0,0,0.4);
+      --btn-shadow-hover: 0 12px 28px rgba(0,0,0,0.5), 0 0 24px rgba(255,255,255,0.05);
+      --video-border: rgba(255,255,255,0.08);
+      --video-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 22px rgba(0,0,0,0.3);
       --video-bg: #000000;
-      --heart-opacity: 0.26;
-      --input-bg: rgba(40,20,87,0.6);
-      --input-border: rgba(215, 182, 255, 0.3);
-      --input-focus-border: rgba(215, 182, 255, 0.7);
+      --heart-fill: 255,255,255;
+      --heart-opacity: 0.35;
+      --input-bg: rgba(15,15,15,0.9);
+      --input-border: rgba(255,255,255,0.12);
+      --input-focus-border: rgba(255,255,255,0.35);
       --comment-bg: rgba(255,255,255,0.03);
-      --comment-border: rgba(215, 182, 255, 0.15);
-      --comment-hover: rgba(215, 182, 255, 0.08);
-      --timestamp-color: #a890d9;
+      --comment-border: rgba(255,255,255,0.07);
+      --comment-hover: rgba(255,255,255,0.06);
+      --timestamp-color: #666666;
+      --noise-opacity: 0.4;
+      --overlay-bg: radial-gradient(ellipse at 50% 35%, rgba(0,0,0,0.35), transparent 60%);
+      --title-color: #d4d4d4;
+      --title-shadow-1: 0 0 20px rgba(180,0,0,0.3), 0 0 60px rgba(100,0,0,0.15), 0 2px 10px rgba(0,0,0,0.8);
+      --title-shadow-2: 0 0 40px rgba(200,0,0,0.4), 0 0 80px rgba(120,0,0,0.2), 0 2px 10px rgba(0,0,0,0.8);
     }
+
+    /* MOTYW JASNY */
+    html[data-theme="light"] {
+      --bg-a: #f5f5f5;
+      --bg-b: #d0d0d0;
+      --text: #1a1a1a;
+      --muted: #555555;
+      --accent: #333333;
+      --accent-strong: #000000;
+      --card-bg: rgba(255,255,255,0.75);
+      --card-border: rgba(0,0,0,0.10);
+      --hr-color: rgba(0,0,0,0.2);
+      --btn-bg: rgba(0,0,0,0.04);
+      --btn-border: rgba(0,0,0,0.18);
+      --btn-bg-hover: rgba(0,0,0,0.10);
+      --btn-border-hover: rgba(0,0,0,0.35);
+      --btn-shadow: 0 8px 22px rgba(0,0,0,0.12);
+      --btn-shadow-hover: 0 12px 28px rgba(0,0,0,0.18), 0 0 24px rgba(0,0,0,0.05);
+      --video-border: rgba(0,0,0,0.15);
+      --video-shadow: 0 10px 30px rgba(0,0,0,0.2), 0 0 22px rgba(0,0,0,0.05);
+      --video-bg: #ffffff;
+      --heart-fill: 80,80,80;
+      --heart-opacity: 0.18;
+      --input-bg: rgba(255,255,255,0.9);
+      --input-border: rgba(0,0,0,0.15);
+      --input-focus-border: rgba(0,0,0,0.4);
+      --comment-bg: rgba(255,255,255,0.5);
+      --comment-border: rgba(0,0,0,0.08);
+      --comment-hover: rgba(0,0,0,0.04);
+      --timestamp-color: #888888;
+      --noise-opacity: 0.15;
+      --overlay-bg: radial-gradient(ellipse at 50% 35%, rgba(255,255,255,0.3), transparent 60%);
+      --title-color: #1a1a1a;
+      --title-shadow-1: 0 0 20px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.15);
+      --title-shadow-2: 0 0 40px rgba(0,0,0,0.25), 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .yt-color { color: #ff1f4a; }
+    .discord-color { color: #5865F2; }
 
     * { box-sizing: border-box; }
     html, body { height: 100%; }
@@ -83,57 +99,115 @@
       animation: bgGradient var(--gradient-speed) ease-in-out infinite;
       line-height: 1.6;
       overflow-x: hidden;
+      transition: color .3s;
     }
-    html[data-theme="dark"] body {
-      background-image: linear-gradient(135deg, var(--bg-a) 0%, var(--bg-b) 58%, var(--bg-c) 100%);
+    @keyframes bgGradient {
+      0%   { background-position: 0% 0%; }
+      50%  { background-position: 100% 100%; }
+      100% { background-position: 0% 0%; }
     }
-    html[data-theme="dark"] body::before {
+    body::before {
       content: "";
       position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      background: radial-gradient(ellipse at 50% 35%, rgba(0,0,0,0.22), transparent 60%);
+      background: var(--overlay-bg);
     }
-    @keyframes bgGradient { 0%{background-position:0% 0%} 50%{background-position:100% 100%} 100%{background-position:0% 0%} }
+    body::after {
+      content: "";
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: var(--noise-opacity);
+    }
 
     .bg-hearts { position: fixed; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
     .bg-hearts svg {
       position: absolute; top: 0; left: var(--x, 50%); width: var(--size, 32px); height: var(--size, 32px);
-      fill: rgba(0,0,0,var(--heart-opacity)); filter: drop-shadow(0 2px 6px rgba(0,0,0,0.18));
+      fill: rgba(var(--heart-fill), var(--heart-opacity));
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
       transform: translate(-50%, 110vh) scale(var(--scale, 1)) rotate(0turn);
       animation: floatUp var(--dur, 28s) linear infinite var(--delay, 0s);
     }
     @keyframes floatUp { 0%{transform:translate(-50%,110vh) scale(var(--scale,1)) rotate(0)} 100%{transform:translate(-50%,-120vh) scale(var(--scale,1)) rotate(.2turn)} }
 
+    @keyframes darkPulse {
+      0%, 100% { text-shadow: var(--title-shadow-1); }
+      50%      { text-shadow: var(--title-shadow-2); }
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      92% { opacity: 1; }
+      93% { opacity: 0.8; }
+      94% { opacity: 1; }
+      96% { opacity: 0.9; }
+      97% { opacity: 1; }
+    }
+
     .container { position: relative; z-index: 2; max-width: 980px; margin: 0 auto; padding: 24px; }
     header { padding: 44px 0 8px; text-align: center; }
-    h1 { font-size: clamp(32px, 7vw, 72px); margin: 0 0 8px; line-height: 1.1; letter-spacing: 1px; color: var(--accent); text-shadow: 0 0 16px rgba(126,92,255,.28), 0 2px 10px rgba(0,0,0,.06); }
-    .fancy-intro { margin: 2px auto 6px; max-width: 920px; font-size: clamp(16px, 3.2vw, 24px); font-weight: 600; color: var(--muted); letter-spacing: .2px; text-shadow: 0 0 12px rgba(126,92,255,.18), 0 2px 8px rgba(0,0,0,.06); }
-    .subtitle { font-weight: 600; color: var(--muted); opacity: .95; }
+    h1 {
+      font-size: clamp(24px, 5.5vw, 56px);
+      margin: 0 0 8px;
+      line-height: 1.15;
+      letter-spacing: 3px;
+      color: var(--title-color);
+      text-shadow: var(--title-shadow-1);
+      animation: darkPulse 4s ease-in-out infinite, flicker 8s ease-in-out infinite;
+      text-transform: uppercase;
+      transition: color .3s;
+    }
+    .fancy-intro {
+      margin: 2px auto 6px;
+      max-width: 920px;
+      font-size: clamp(15px, 3vw, 22px);
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: .2px;
+      text-shadow: 0 2px 8px rgba(0,0,0,.3);
+    }
+    .subtitle { font-weight: 600; color: var(--muted); opacity: .85; }
 
-    .card { margin: 24px auto; padding: 24px 22px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); box-shadow: 0 8px 24px rgba(0,0,0,.10), 0 0 22px rgba(126,92,255,.10); }
+    .card {
+      margin: 24px auto;
+      padding: 24px 22px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,0.03);
+      transition: background-color .3s, border-color .3s;
+    }
     .content p { margin: 0 0 12px; font-size: clamp(16px, 2.3vw, 20px); }
-    .info { margin-top: 12px; padding-top: 8px; border-top: 1px dashed rgba(126,92,255,.25); color: var(--muted); }
+    .info { margin-top: 12px; padding-top: 8px; border-top: 1px dashed var(--card-border); color: var(--muted); }
 
-    .updates h2 { margin: 0 0 12px; font-size: clamp(18px, 2.6vw, 22px); color: var(--accent-strong); text-shadow: 0 0 12px rgba(126,92,255,.14); }
+    .updates h2 { margin: 0 0 12px; font-size: clamp(18px, 2.6vw, 22px); color: var(--accent-strong); }
     .updates .goal .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
     .updates .goal .label strong { color: var(--accent-strong); }
     .updates .goal .value { font-weight: 800; color: var(--accent-strong); white-space: nowrap; }
     .updates .goal .goal-intro { margin: 4px 0 8px; color: var(--muted); font-weight: 600; }
-    .updates .progress { position: relative; height: 10px; border-radius: 999px; overflow: hidden; background: rgba(126,92,255,.18); border: 1px solid rgba(126,92,255,.35); }
-    .updates .progress .bar { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent-strong)); border-radius: 999px; box-shadow: 0 0 12px rgba(126,92,255,.35); transition: width .6s ease; }
+    .updates .progress { position: relative; height: 10px; border-radius: 999px; overflow: hidden; background: var(--btn-bg); border: 1px solid var(--btn-border); }
+    .updates .progress .bar { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent-strong)); border-radius: 999px; transition: width .6s ease; }
     .updates ul { list-style: none; padding: 10px 0 0; margin: 0; display: grid; gap: 8px; }
     .updates li { display: flex; align-items: center; gap: 10px; }
     .updates .icon { display: inline-flex; width: 20px; height: 20px; color: var(--muted); flex: 0 0 20px; }
-    .updates .icon.youtube { color: var(--yt); }
-    .updates .icon.discord { color: var(--discord); }
-    .updates .icon.instagram { color: var(--instagram); }
+    .updates .icon.youtube { color: #ff1f4a; }
+    .updates .icon.discord { color: #5865F2; }
     .updates .icon.info { color: var(--accent-strong); }
 
-    .btn { display: inline-block; margin-top: 12px; padding: 12px 18px; border-radius: 999px; background: var(--btn-bg); border: 1px solid var(--btn-border); color: var(--accent-strong); font-weight: 700; text-decoration: none; box-shadow: var(--btn-shadow); transition: transform .15s, background-color .2s, box-shadow .2s, border-color .2s, color .2s; cursor: pointer; }
-    .btn:hover { transform: translateY(-1px); background: var(--btn-bg-hover); border-color: var(--btn-border-hover); box-shadow: var(--btn-shadow-hover); color: var(--accent-strong); }
+    .btn {
+      display: inline-block; margin-top: 12px; padding: 12px 18px; border-radius: 999px;
+      background: var(--btn-bg); border: 1px solid var(--btn-border); color: var(--accent-strong);
+      font-weight: 700; text-decoration: none; box-shadow: var(--btn-shadow);
+      transition: transform .15s, background-color .2s, box-shadow .2s, border-color .2s, color .2s; cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-1px); background: var(--btn-bg-hover); border-color: var(--btn-border-hover); box-shadow: var(--btn-shadow-hover); }
     a.btn.social-btn { display: inline-flex; align-items: center; gap: 10px; }
     a.btn.social-btn svg { width: 20px; height: 20px; }
-    .btn--youtube { background: rgba(255,31,74,.10); border-color: rgba(255,31,74,.55); color: #d6284e; }
-    .btn--youtube:hover { background: rgba(255,31,74,.18); border-color: rgba(255,31,74,.85); color: #a31536; }
+    .btn--youtube { background: rgba(255,31,74,.08); border-color: rgba(255,31,74,.35); color: #ff1f4a; }
+    .btn--youtube:hover { background: rgba(255,31,74,.15); border-color: rgba(255,31,74,.65); color: #ff4466; }
+    .btn--discord { background: rgba(88,101,242,.08); border-color: rgba(88,101,242,.35); color: #5865F2; }
+    .btn--discord:hover { background: rgba(88,101,242,.15); border-color: rgba(88,101,242,.65); color: #7289da; }
+    .btn--donate { background: rgba(220,50,50,.08); border-color: rgba(220,50,50,.35); color: #cc3333; }
+    .btn--donate:hover { background: rgba(220,50,50,.15); border-color: rgba(220,50,50,.65); color: #ee5555; }
 
     .video { position: relative; width: min(100%, 860px); margin: 0 auto 16px; border-radius: 12px; overflow: hidden; border: 1px solid var(--video-border); box-shadow: var(--video-shadow); background: var(--video-bg); }
     .video::before { content: ""; display: block; padding-top: 56.25%; }
@@ -143,6 +217,7 @@
 
     footer { margin-top: 32px; padding: 24px 0 16px; text-align: center; }
     footer p { margin: 0 0 12px; font-weight: 600; }
+    .footer-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 
     .theme-toggle {
       position: fixed; right: 16px; top: 16px; z-index: 100; padding: 10px 14px; border-radius: 999px;
@@ -166,8 +241,8 @@
       position: fixed; left: 16px; top: 62px; z-index: 101;
       min-width: 200px; padding: 8px;
       background: var(--card-bg); border: 1px solid var(--card-border);
-      border-radius: 12px; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-      box-shadow: 0 8px 24px rgba(0,0,0,.10), 0 0 22px rgba(126,92,255,.10);
+      border-radius: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.5);
       display: grid; gap: 6px;
     }
     .lang-option {
@@ -179,151 +254,62 @@
     .lang-option:hover { background: var(--btn-bg-hover); border-color: var(--btn-border-hover); }
     .lang-option.active { border-color: var(--btn-border-hover); background: var(--btn-bg); }
 
-    /* KOMENTARZE */
-    .comments h2 {
-      margin: 0 0 12px;
-      font-size: clamp(18px, 2.6vw, 22px);
-      color: var(--accent-strong);
-    }
-    .comments .helper {
-      color: var(--muted);
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-    .comment-form {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-bottom: 24px;
-    }
+    .comments h2 { margin: 0 0 12px; font-size: clamp(18px, 2.6vw, 22px); color: var(--accent-strong); }
+    .comments .helper { color: var(--muted); font-weight: 600; margin-bottom: 20px; }
+    .comment-form { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
     .comment-form input,
     .comment-form textarea {
-      width: 100%;
-      padding: 14px 16px;
-      border: 1px solid var(--input-border);
-      border-radius: 12px;
-      background: var(--input-bg);
-      color: var(--text);
-      font-family: inherit;
-      font-size: 15px;
-      font-weight: 500;
-      transition: border-color .2s, box-shadow .2s;
+      width: 100%; padding: 14px 16px; border: 1px solid var(--input-border); border-radius: 12px;
+      background: var(--input-bg); color: var(--text); font-family: inherit; font-size: 15px; font-weight: 500;
+      transition: border-color .2s, box-shadow .2s, background-color .3s;
     }
     .comment-form input::placeholder,
-    .comment-form textarea::placeholder {
-      color: var(--muted);
-      opacity: 0.7;
-    }
+    .comment-form textarea::placeholder { color: var(--muted); opacity: 0.7; }
     .comment-form input:focus,
-    .comment-form textarea:focus {
-      outline: none;
-      border-color: var(--input-focus-border);
-      box-shadow: 0 0 0 3px rgba(126, 92, 255, 0.15);
-    }
-    .comment-form textarea {
-      min-height: 100px;
-      resize: vertical;
-    }
+    .comment-form textarea:focus { outline: none; border-color: var(--input-focus-border); box-shadow: 0 0 0 3px rgba(0,0,0,0.05); }
+    .comment-form textarea { min-height: 100px; resize: vertical; }
     .comment-form button {
-      align-self: flex-start;
-      padding: 12px 24px;
-      border-radius: 999px;
+      align-self: flex-start; padding: 12px 24px; border-radius: 999px;
       background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-      border: none;
-      color: white;
-      font-family: inherit;
-      font-size: 15px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform .15s, box-shadow .2s, opacity .2s;
-      box-shadow: 0 4px 16px rgba(126, 92, 255, 0.3);
-    }
-    .comment-form button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(126, 92, 255, 0.4);
-    }
-    .comment-form button:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-      transform: none;
-    }
-    .comments-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .comment-item {
-      padding: 16px;
-      background: var(--comment-bg);
-      border: 1px solid var(--comment-border);
-      border-radius: 12px;
-      transition: background-color .2s;
-    }
-    .comment-item:hover {
-      background: var(--comment-hover);
-    }
-    .comment-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .comment-author {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .comment-avatar {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 800;
-      font-size: 14px;
-      text-transform: uppercase;
-    }
-    .comment-name {
-      font-weight: 700;
-      color: var(--accent-strong);
-    }
-    .comment-time {
-      font-size: 13px;
-      color: var(--timestamp-color);
-      font-weight: 500;
-    }
-    .comment-text {
-      color: var(--text);
-      line-height: 1.6;
-      word-wrap: break-word;
-    }
-    .comments-empty {
-      text-align: center;
-      padding: 32px 16px;
-      color: var(--muted);
-      font-weight: 600;
-    }
-    .comments-loading {
-      text-align: center;
-      padding: 24px;
-      color: var(--muted);
-    }
-    .comment-count {
-      display: inline-flex;
-      padding: 4px 12px;
-      background: var(--btn-bg);
       border: 1px solid var(--btn-border);
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--accent-strong);
-      margin-left: 12px;
+      color: var(--card-bg); font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+      transition: transform .15s, box-shadow .2s, opacity .2s; box-shadow: 0 4px 16px rgba(0,0,0,0.3);
     }
+    html[data-theme="dark"] .comment-form button { color: #fff; }
+    html[data-theme="light"] .comment-form button { color: #fff; }
+    .comment-form button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+    .comment-form button:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+    .comments-list { display: flex; flex-direction: column; gap: 12px; }
+    .comment-item { padding: 16px; background: var(--comment-bg); border: 1px solid var(--comment-border); border-radius: 12px; transition: background-color .2s; }
+    .comment-item:hover { background: var(--comment-hover); }
+    .comment-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+    .comment-author { display: flex; align-items: center; gap: 10px; }
+    .comment-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      display: flex; align-items: center; justify-content: center;
+      color: var(--card-bg); font-weight: 800; font-size: 14px; text-transform: uppercase;
+    }
+    html[data-theme="dark"] .comment-avatar { color: #fff; }
+    html[data-theme="light"] .comment-avatar { color: #fff; }
+    .comment-name { font-weight: 700; color: var(--accent-strong); }
+    .comment-time { font-size: 13px; color: var(--timestamp-color); font-weight: 500; }
+    .comment-text { color: var(--text); line-height: 1.6; word-wrap: break-word; }
+    .comments-empty { text-align: center; padding: 32px 16px; color: var(--muted); font-weight: 600; }
+    .comments-loading { text-align: center; padding: 24px; color: var(--muted); }
+    .comment-count {
+      display: inline-flex; padding: 4px 12px; background: var(--btn-bg); border: 1px solid var(--btn-border);
+      border-radius: 999px; font-size: 14px; font-weight: 700; color: var(--accent-strong); margin-left: 12px;
+    }
+
+    .video-glow { text-align: center; margin-top: 16px; margin-bottom: 8px; }
+    .video-glow p {
+      font-size: clamp(15px, 2.5vw, 19px);
+      color: var(--muted); font-weight: 600; line-height: 1.6;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .skull-divider { text-align: center; font-size: 28px; margin: 16px 0; opacity: 0.3; letter-spacing: 20px; color: var(--text); }
   </style>
 </head>
 <body>
@@ -341,50 +327,40 @@
     <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
     <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
   </div>
-  <button id="themeToggle" class="theme-toggle" type="button">🌙 Ciemny</button>
+  <button id="themeToggle" class="theme-toggle" type="button">☠️ Mroczny</button>
 
   <div class="container">
     <header>
-      <h1 id="heroTitle">𝓦𝓘𝓣𝓐𝓜𝓨 𝓦 𝓡𝓞𝓓𝓩𝓘𝓝𝓒𝓔 𝓕𝓤𝓡𝓐𝓢𝓚𝓐 𝓥𝓔𝓧𝓐</h1>
-      <p id="introText" class="fancy-intro">Dzięki, że tu wpadłeś! Rozgość się i zobacz, co ciekawego przygotowałem. Miłego przeglądania!</p>
+      <h1 id="heroTitle">WITAJ PO MROCZNEJ STRONIE MOJEGO UMYSŁU</h1>
       <div class="video hero-video">
-        <iframe id="ytIframe" src="https://www.youtube.com/embed/pos632jmaNE?si=DGikv9cLFB1caLDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe id="ytIframe" src="https://www.youtube.com/embed/yK0H6zS5wdg?si=lr73j-M0v-o7284M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <div id="subtitleText" class="subtitle">Miło, że wpadłeś/aś! Rozgość się ☺️</div>
+      <div class="video-glow">
+        <p id="subtitleText">witaj w rozjebanej psychice mojego umysłu, jeśli ci sie podoba moja twórczość to rzuć donate</p>
+      </div>
+      <p><a id="supportBtn" class="btn btn--donate" href="https://tipply.pl/@VexTV" target="_blank" rel="noopener">💀 Donate — Tipply</a></p>
     </header>
 
     <main>
-      <section class="card content">
-        <p id="welcomeText">Hej! Witaj na mojej stronie. To miejsce, w którym możesz poczuć się jak u siebie. Jeśli podobają Ci się moje projekty i chcesz mnie wesprzeć, możesz zrobić to tutaj:</p>
-        <p><a id="supportBtn" class="btn" href="https://tipply.pl/@VexTV" target="_blank" rel="noopener">❤️ Wesprzyj mnie na Tipply</a></p>
-        <div class="info">
-          <p id="infoText1">Chcę, żebyście czuli się tu jak w domu 🏠 Dlatego zapraszam też na mój kanał na YouTube – link znajdziesz na dole strony.</p>
-          <p id="infoText2">Razem możemy stworzyć społeczność, na której bardzo mi zależy. Postaram się być dla Was jak najlepszy ❤️</p>
-          <p id="infoText3">W tej sekcji będę dodawał najważniejsze informacje i aktualizacje.</p>
-        </div>
-      </section>
+      <div class="skull-divider">☠ ☠ ☠</div>
 
       <section class="card updates">
         <h2 id="updatesTitle">Aktualne informacje</h2>
-        <div class="goal" data-current="3" data-goal="1000">
+        <div class="goal" data-current="149" data-goal="1000">
           <div class="row">
             <span class="icon youtube">
               <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.7 3 12 3 12 3s-6.7 0-8.7.4A4 4 0 0 0 .5 6.2 41.4 41.4 0 0 0 .1 12a41.4 41.4 0 0 0 .4 5.8 4 4 0 0 0 2.8 2.8C5.3 21 12 21 12 21s6.7 0 8.7-.4a4 4 0 0 0 2.8-2.8c.3-1.9.4-5.8.4-5.8s0-3.9-.4-5.8zM9.8 15.5V8.5l6.4 3.5-6.4 3.5z"/></svg>
             </span>
             <span id="goalLabel" class="label">Cel subskrypcji — <strong>1000</strong></span>
-            <span class="value">3 / 1000</span>
+            <span class="value">149 / 1000</span>
           </div>
           <p id="goalIntro" class="goal-intro">Razem dążymy do 1000 subów na YouTube! 🎉</p>
-          <div class="progress"><span class="bar" style="width: 0.3%"></span></div>
+          <div class="progress"><span class="bar" style="width: 14.9%"></span></div>
         </div>
         <ul class="list">
           <li class="item">
             <span class="icon discord"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.317 4.369A19.791 19.791 0 0016.558 3c-.207.363-.444.84-.608 1.215a17.456 17.456 0 00-5.9 0C9.888 3.84 9.65 3.363 9.443 3a19.736 19.736 0 00-3.76 1.37C2.256 9.099 1.385 13.63 1.742 18.108A19.8 19.8 0 007.58 21c.3-.41.565-.847.79-1.305a12.91 12.91 0 01-1.247-.592l.302-.237a14.2 14.2 0 009.13 0l.304.237c-.41.2-.83.41-1.25.59.23.46.49.9.79 1.31a19.76 19.76 0 005.84-2.89c.47-5.54-.8-10.02-2.87-13.74zM9.347 15.5c-1.1 0-2.002-1.01-2.002-2.255 0-1.245.89-2.255 2.002-2.255 1.123 0 2.015 1.01 2.015 2.255 0 1.245-.902 2.255-2.015 2.255zm5.306 0c-1.1 0-2.003-1.01-2.003-2.255 0-1.245.89-2.255 2.003-2.255 1.122 0 2.015 1.01 2.015 2.255 0 1.245-.893 2.255-2.015 2.255z"/></svg></span>
-            <span id="discordSoon">Serwer Discord już wkrótce!</span>
-          </li>
-          <li class="item">
-            <span class="icon instagram"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm10 2H7a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3zm-5 3a5 5 0 110 10 5 5 0 010-10zm0 2.2a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6z"/></svg></span>
-            <span id="instaSoon">Instagram Furaska – startuje niebawem!</span>
+            <span id="discordText">Dołącz na serwer Discord!</span>
           </li>
           <li class="item">
             <span class="icon info"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 110 20 10 10 0 010-20zm1 5h-2v2h2V7zm0 4h-2v7h2v-7z"/></svg></span>
@@ -397,12 +373,16 @@
 
       <footer>
         <p id="findMeText">Znajdziesz mnie też tutaj:</p>
-        <p>
-          <a id="ytLink" class="btn social-btn btn--youtube" href="https://youtube.com/@vextv-f8b?si=MYVJGZAAMCjPPIl4" target="_blank" rel="noopener">
+        <div class="footer-buttons">
+          <a id="ytLink" class="btn social-btn btn--youtube" href="https://www.youtube.com/@MARO-qs6ww" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path fill="#ff1f4a" d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.7 3 12 3 12 3s-6.7 0-8.7.4A4 4 0 0 0 .5 6.2 41.4 41.4 0 0 0 .1 12a41.4 41.4 0 0 0 .4 5.8 4 4 0 0 0 2.8 2.8C5.3 21 12 21 12 21s6.7 0 8.7-.4a4 4 0 0 0 2.8-2.8c.3-1.9.4-5.8.4-5.8s0-3.9-.4-5.8z"/><path fill="#fff" d="M9.8 15.5V8.5l6.4 3.5-6.4 3.5z"/></svg>
             <span id="ytBtnText">Subskrybuj na YouTube</span>
           </a>
-        </p>
+          <a id="discordLink" class="btn social-btn btn--discord" href="https://discord.gg/6sB3WrBERk" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path fill="#5865F2" d="M20.317 4.369A19.791 19.791 0 0016.558 3c-.207.363-.444.84-.608 1.215a17.456 17.456 0 00-5.9 0C9.888 3.84 9.65 3.363 9.443 3a19.736 19.736 0 00-3.76 1.37C2.256 9.099 1.385 13.63 1.742 18.108A19.8 19.8 0 007.58 21c.3-.41.565-.847.79-1.305a12.91 12.91 0 01-1.247-.592l.302-.237a14.2 14.2 0 009.13 0l.304.237c-.41.2-.83.41-1.25.59.23.46.49.9.79 1.31a19.76 19.76 0 005.84-2.89c.47-5.54-.8-10.02-2.87-13.74zM9.347 15.5c-1.1 0-2.002-1.01-2.002-2.255 0-1.245.89-2.255 2.002-2.255 1.123 0 2.015 1.01 2.015 2.255 0 1.245-.902 2.255-2.015 2.255zm5.306 0c-1.1 0-2.003-1.01-2.003-2.255 0-1.245.89-2.255 2.003-2.255 1.122 0 2.015 1.01 2.015 2.255 0 1.245-.893 2.255-2.015 2.255z"/></svg>
+            <span id="discordBtnText">Dołącz na Discord</span>
+          </a>
+        </div>
       </footer>
 
       <section class="card comments">
@@ -438,123 +418,94 @@
     var db = firebase.database();
     var commentsRef = db.ref("comments");
 
-    // Tłumaczenia - NAPRAWIONE PRZECINKI
     var LANG = {
       pl: {
-        heroTitle: "𝓦𝓘𝓣𝓐𝓜𝓨 𝓦 𝓡𝓞𝓓𝓩𝓘𝓝𝓒𝓔 𝓕𝓤𝓡𝓐𝓢𝓚𝓐 𝓥𝓔𝓧𝓐",
-        introText: "Dzięki, że tu wpadłeś! Rozgość się i zobacz, co ciekawego przygotowałem. Miłego przeglądania!",
-        subtitleText: "Miło, że wpadłeś/aś! Rozgość się ☺️",
-        welcomeText: "Hej! Witaj na mojej stronie. To miejsce, w którym możesz poczuć się jak u siebie. Jeśli podobają Ci się moje projekty i chcesz mnie wesprzeć, możesz zrobić to tutaj:",
-        supportBtn: "❤️ Wesprzyj mnie na Tipply",
-        info1: "Chcę, żebyście czuli się tu jak w domu 🏠 Dlatego zapraszam też na mój kanał na YouTube – link znajdziesz na dole strony.",
-        info2: "Razem możemy stworzyć społeczność, na której bardzo mi zależy. Postaram się być dla Was jak najlepszy ❤️",
-        info3: "W tej sekcji będę dodawał najważniejsze informacje i aktualizacje.",
+        heroTitle: "WITAJ PO MROCZNEJ STRONIE MOJEGO UMYSŁU",
+        subtitleText: "witaj w rozjebanej psychice mojego umysłu, jeśli ci sie podoba moja twórczość to rzuć donate",
+        supportBtn: "💀 Donate — Tipply",
         updatesTitle: "Aktualne informacje",
         goalLabel: "Cel subskrypcji — <strong>1000</strong>",
         goalIntro: "Razem dążymy do 1000 subów na YouTube! 🎉",
-        discordSoon: "Serwer Discord już wkrótce!",
-        instaSoon: "Instagram Furaska – startuje niebawem!",
+        discordText: "Dołącz na serwer Discord!",
         moreInfoNote: "Będę na bieżąco wrzucał nowe informacje.",
         findMeText: "Znajdziesz mnie też tutaj:",
         ytBtnText: "Subskrybuj na YouTube",
+        discordBtnText: "Dołącz na Discord",
         commentsTitle: "Komentarze",
         commentsHelper: "Jeśli podoba Ci się ta strona, zostaw komentarz i daj znać, co o niej myślisz. Miłego dnia! :3",
         namePlaceholder: "Twoje imię lub nick...",
         textPlaceholder: "Napisz komentarz...",
         submitBtn: "💬 Dodaj komentarz",
         noComments: "Brak komentarzy. Bądź pierwszy!",
-        themeDark: "🌙 Ciemny",
-        themeLight: "☀️ Jasny",
         justNow: "przed chwilą",
         minAgo: " min temu",
         hAgo: " godz. temu",
         dAgo: " dni temu"
       },
       en: {
-        heroTitle: "WELCOME TO THE FURASKA VEXA FAMILY",
-        introText: "Thanks for stopping by! Make yourself at home and see what I have prepared. Enjoy browsing!",
-        subtitleText: "Glad you are here! Make yourself comfortable ☺️",
-        welcomeText: "Hey! Welcome to my website. This is a place where you can feel at home. If you like my projects and want to support me, you can do it here:",
-        supportBtn: "❤️ Support me on Tipply",
-        info1: "I want you to feel at home 🏠 That is why I am inviting you to my YouTube channel too — you will find the link at the bottom.",
-        info2: "Together we can build a community that means a lot to me. I will do my best for you ❤️",
-        info3: "In this section I will post the most important info and updates.",
+        heroTitle: "WELCOME TO THE DARK SIDE OF MY MIND",
+        subtitleText: "welcome to the f*cked up psyche of my mind, if you like my work then drop a donate",
+        supportBtn: "💀 Donate — Tipply",
         updatesTitle: "Latest updates",
         goalLabel: "Subscription goal — <strong>1000</strong>",
         goalIntro: "Together we are aiming for 1000 subs on YouTube! 🎉",
-        discordSoon: "Discord server coming soon!",
-        instaSoon: "Furaska Instagram — launching soon!",
+        discordText: "Join the Discord server!",
         moreInfoNote: "I will keep posting new information.",
         findMeText: "Find me here too:",
         ytBtnText: "Subscribe on YouTube",
+        discordBtnText: "Join Discord",
         commentsTitle: "Comments",
         commentsHelper: "If you like this site, leave a comment and tell me what you think. Have a nice day! :3",
         namePlaceholder: "Your name or nickname...",
         textPlaceholder: "Write a comment...",
         submitBtn: "💬 Add comment",
         noComments: "No comments yet. Be the first!",
-        themeDark: "🌙 Dark",
-        themeLight: "☀️ Light",
         justNow: "just now",
         minAgo: " min ago",
         hAgo: " hours ago",
         dAgo: " days ago"
       },
       ru: {
-        heroTitle: "ДОБРО ПОЖАЛОВАТЬ В СЕМЬЮ ФУРАСКИ ВЕКСА",
-        introText: "Спасибо, что заглянул! Чувствуй себя как дома. Приятного просмотра!",
-        subtitleText: "Рад тебя видеть! Устраивайся поудобнее ☺️",
-        welcomeText: "Привет! Добро пожаловать на мой сайт. Здесь можно чувствовать себя как дома. Если тебе нравятся мои проекты, можешь поддержать меня здесь:",
-        supportBtn: "❤️ Поддержать на Tipply",
-        info1: "Хочу, чтобы вы чувствовали себя как дома 🏠 Приглашаю на мой YouTube-канал — ссылка внизу.",
-        info2: "Вместе мы можем создать важное сообщество. Я постараюсь быть лучшим ❤️",
-        info3: "В этом разделе буду добавлять важную информацию.",
+        heroTitle: "ДОБРО ПОЖАЛОВАТЬ НА ТЁМНУЮ СТОРОНУ МОЕГО РАЗУМА",
+        subtitleText: "добро пожаловать в разбитую психику моего разума, если нравится — кинь донат",
+        supportBtn: "💀 Донат — Tipply",
         updatesTitle: "Актуальная информация",
         goalLabel: "Цель подписок — <strong>1000</strong>",
         goalIntro: "Вместе стремимся к 1000 подписчикам! 🎉",
-        discordSoon: "Сервер Discord скоро!",
-        instaSoon: "Instagram Furaska — скоро!",
+        discordText: "Заходи на сервер Discord!",
         moreInfoNote: "Буду регулярно публиковать новости.",
         findMeText: "Найди меня здесь:",
         ytBtnText: "Подпишись на YouTube",
+        discordBtnText: "Заходи в Discord",
         commentsTitle: "Комментарии",
         commentsHelper: "Если нравится сайт, оставь комментарий! Хорошего дня! :3",
         namePlaceholder: "Твоё имя или ник...",
         textPlaceholder: "Напиши комментарий...",
         submitBtn: "💬 Добавить",
         noComments: "Нет комментариев. Будь первым!",
-        themeDark: "🌙 Тёмная",
-        themeLight: "☀️ Светлая",
         justNow: "только что",
         minAgo: " мин назад",
         hAgo: " ч назад",
         dAgo: " дн назад"
       },
       ja: {
-        heroTitle: "FURASKA VEXAファミリーへようこそ",
-        introText: "来てくれてありがとう！ゆっくりしていってね。楽しんで！",
-        subtitleText: "来てくれて嬉しいよ！ごゆっくり ☺️",
-        welcomeText: "やあ！僕のサイトへようこそ。ここは家のようにくつろげる場所だよ。応援してくれるなら：",
-        supportBtn: "❤️ Tipplyで応援",
-        info1: "ここを家のように感じてほしい 🏠 YouTubeチャンネルにもぜひ。",
-        info2: "みんなで大切なコミュニティを作ろう ❤️",
-        info3: "このセクションで重要な情報を載せるよ。",
+        heroTitle: "僕の心の闇の側へようこそ",
+        subtitleText: "壊れた精神世界へようこそ、気に入ったらドネートしてね",
+        supportBtn: "💀 ドネート — Tipply",
         updatesTitle: "最新情報",
         goalLabel: "登録目標 — <strong>1000</strong>",
         goalIntro: "みんなで1000人目指そう！🎉",
-        discordSoon: "Discordサーバー近日公開！",
-        instaSoon: "Instagram — もうすぐ！",
+        discordText: "Discordサーバーに参加！",
         moreInfoNote: "新しい情報を随時更新。",
         findMeText: "こちらでも：",
         ytBtnText: "YouTubeを登録",
+        discordBtnText: "Discordに参加",
         commentsTitle: "コメント",
         commentsHelper: "気に入ったらコメントしてね！良い一日を！:3",
         namePlaceholder: "名前またはニックネーム...",
         textPlaceholder: "コメントを書く...",
         submitBtn: "💬 追加",
         noComments: "コメントがありません。最初にコメントしてね！",
-        themeDark: "🌙 ダーク",
-        themeLight: "☀️ ライト",
         justNow: "たった今",
         minAgo: "分前",
         hAgo: "時間前",
@@ -563,7 +514,6 @@
     };
 
     var currentLang = "pl";
-    var currentTheme = "light";
     var commentsData = {};
 
     function $(id) {
@@ -575,43 +525,29 @@
       localStorage.setItem("lang", lang);
       var t = LANG[lang];
 
-      $("heroTitle").innerHTML = t.heroTitle;
-      $("introText").textContent = t.introText;
+      $("heroTitle").textContent = t.heroTitle;
       $("subtitleText").textContent = t.subtitleText;
-      $("welcomeText").textContent = t.welcomeText;
       $("supportBtn").textContent = t.supportBtn;
-      $("infoText1").textContent = t.info1;
-      $("infoText2").textContent = t.info2;
-      $("infoText3").textContent = t.info3;
       $("updatesTitle").textContent = t.updatesTitle;
       $("goalLabel").innerHTML = t.goalLabel;
       $("goalIntro").textContent = t.goalIntro;
-      $("discordSoon").textContent = t.discordSoon;
-      $("instaSoon").textContent = t.instaSoon;
+      $("discordText").textContent = t.discordText;
       $("moreInfoNote").textContent = t.moreInfoNote;
       $("findMeText").textContent = t.findMeText;
       $("ytBtnText").textContent = t.ytBtnText;
+      $("discordBtnText").textContent = t.discordBtnText;
       $("commentsTitle").textContent = t.commentsTitle;
       $("commentsHelper").textContent = t.commentsHelper;
       $("commentName").placeholder = t.namePlaceholder;
       $("commentText").placeholder = t.textPlaceholder;
       $("commentSubmit").textContent = t.submitBtn;
       $("langToggle").textContent = "🌐 " + lang.toUpperCase();
-      $("themeToggle").textContent = currentTheme === "dark" ? t.themeLight : t.themeDark;
 
       document.querySelectorAll(".lang-option").forEach(function(btn) {
         btn.classList.toggle("active", btn.dataset.lang === lang);
       });
 
       renderComments();
-    }
-
-    function setTheme(theme) {
-      currentTheme = theme;
-      localStorage.setItem("theme", theme);
-      document.documentElement.setAttribute("data-theme", theme);
-      var t = LANG[currentLang];
-      $("themeToggle").textContent = theme === "dark" ? t.themeLight : t.themeDark;
     }
 
     function formatTime(timestamp) {
@@ -672,14 +608,7 @@
     // INIT
     document.addEventListener("DOMContentLoaded", function() {
       var savedLang = localStorage.getItem("lang") || "pl";
-      var savedTheme = localStorage.getItem("theme") || "light";
-
-      setTheme(savedTheme);
       setLang(savedLang);
-
-      $("themeToggle").addEventListener("click", function() {
-        setTheme(currentTheme === "dark" ? "light" : "dark");
-      });
 
       $("langToggle").addEventListener("click", function(e) {
         e.stopPropagation();
@@ -738,9 +667,6 @@
       document.addEventListener("keydown", function(e) {
         if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
 
-        if (e.key === "t" || e.key === "T") {
-          setTheme(currentTheme === "dark" ? "light" : "dark");
-        }
         if (e.key === "l" || e.key === "L") {
           $("langPanel").hidden = !$("langPanel").hidden;
         }
@@ -749,6 +675,19 @@
         }
       });
     });
+	      // THEME TOGGLE
+      var savedTheme = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      var themeBtn = document.getElementById("themeToggle");
+      themeBtn.textContent = savedTheme === "dark" ? "☀️ Jasny" : "🌙 Ciemny";
+
+      themeBtn.addEventListener("click", function() {
+        var current = document.documentElement.getAttribute("data-theme");
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        themeBtn.textContent = next === "dark" ? "☀️ Jasny" : "🌙 Ciemny";
+      });
   </script>
 </body>
 </html>
